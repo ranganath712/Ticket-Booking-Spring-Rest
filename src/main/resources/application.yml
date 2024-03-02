@@ -1,0 +1,20 @@
+spring:
+    datasource:
+        password: dragon8Ra1$
+        url: jdbc:mysql://localhost:3306/Rest_Master_DB
+        username: root
+        driver: com.mysql.cj.jdbc.Driver
+       
+    mvc:
+        pathmatch:
+          matching-strategy: ant-path-matcher
+    jpa:
+        hibernate:
+          ddl-auto: update
+        show-sql: true
+    application:
+      name: TicketBookingRestAPI
+        
+springdoc:
+    swagger-ui:
+      path: swagger-ui.html
